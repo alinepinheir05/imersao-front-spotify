@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/login.css" />
+    <title>SignUp</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="./src/assets/icons/logo-spotify.png" alt="logo do Spotify" />
+      </div>
+    </div>
+    <div class="signup-container">
+      <div class="signup-form">
+        <h1>Inscreva-se para começar a ouvir</h1>
+        <label for="email">Endereço de e-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="name@email.com"
+          required
+        />
+        <a class="information">Em vez disso, use o número de telefone.</a>
+        <button type="submit">Próximo</button>
+        <div class="display">
+          <hr class="or-divider" />
+          <div class="or-label">ou</div>
+          <hr class="or-divider" />
+        </div>
+
+        <div class="login-access">
+          <button class="google">
+            <img class="google-image" src="./assets/redes/google.png" />
+            <span>Entre com Google</span>
+          </button>
+          <button class="facebook">
+            <img class="facebook-image" src="./assets/redes/facebook.png" />
+            <span>Entre com Facebook</span>
+          </button>
+          <button class="apple">
+            <img class="apple-image" src="./assets/redes/apple.png" />
+            <span>Entre com Apple</span>
+          </button>
+        </div>
+
+        <hr class="final-divider" />
+
+        <div class="final-message">
+          <label class="signup-account">Já possui uma conta?</label>
+          <a class="login-account">Faça login</a>
+        </div>
+      </div>
+      <div class="privacity-policy">
+        <label class="recaptcha">
+        This site is protected by reCAPTCHA and the Google
+        </label>
+        <label class="privacity">
+            Privacy Policy and Terms of Service apply.
+        </label>
+    </div>
+    </div>
+  </body>
+</html>

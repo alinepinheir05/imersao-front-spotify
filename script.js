@@ -35,9 +35,7 @@ function updateGrid() {
   container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(0, 1fr))`;
 }
 
-// Chame a função assim que a página for carregada ou sempre que necessário
 updateGrid();
 
-// Adicione um ouvinte de redimensionamento para chamar a função quando a largura da janela mudar
 window.addEventListener("resize", updateGrid);
 

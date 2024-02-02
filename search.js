@@ -2,6 +2,7 @@ const searchInput = document.getElementById("search-input");
 const resultArtist = document.getElementById("result-artist");
 const playlistContainer = document.getElementById("result-playlists");
 const gridContainer = document.querySelector(".grid-container");
+const signupButton = document.getElementById("signupButton");
 
 function requestApi(searchTerm) {
   const url = `http://localhost:3000/artists?name_like=${searchTerm}`;
