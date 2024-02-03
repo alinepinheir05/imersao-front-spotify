@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/login.css" />
-    <title>SignUp</title>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/icons/favicon.png"
-      type="image/x-icon"
-    />
+    <title>Login - Spotify</title>
   </head>
   <body>
     <div class="header">
@@ -17,55 +12,61 @@
         <img src="./src/assets/icons/logo-spotify.png" alt="logo do Spotify" />
       </div>
     </div>
-    <div class="signup-container">
-      <div class="signup-form">
-        <h1>Inscreva-se para começar a ouvir</h1>
-        <label for="email">Endereço de e-mail</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="name@email.com"
-          required
-        />
-        <a class="information">Em vez disso, use o número de telefone.</a>
-        <button type="submit">Próximo</button>
-        <div class="display">
-          <hr class="or-divider" />
-          <div class="or-label">ou</div>
-          <hr class="or-divider" />
-        </div>
+    <div class="container">
+      <div class="login-box">
+        <form action="#" method="post">
+          <h1 class="box-title">Faça login no Spotify</h1>
+          <div class="signup-access">
+            <button class="google">
+              <img class="google-image" src="./assets/redes/google.png" />
+              <span>Entre com Google</span>
+            </button>
+            <button class="facebook">
+              <img class="facebook-image" src="./assets/redes/facebook.png" />
+              <span>Entre com Facebook</span>
+            </button>
+            <button class="apple">
+              <img class="apple-image" src="./assets/redes/apple.png" />
+              <span>Entre com Apple</span>
+            </button>
+          </div>
 
-        <div class="login-access">
-          <button class="google">
-            <img class="google-image" src="./assets/redes/google.png" />
-            <span>Entre com Google</span>
+          <button class="telephone-number">
+            Continue com o número de telefone
           </button>
-          <button class="facebook">
-            <img class="facebook-image" src="./assets/redes/facebook.png" />
-            <span>Entre com Facebook</span>
-          </button>
-          <button class="apple">
-            <img class="apple-image" src="./assets/redes/apple.png" />
-            <span>Entre com Apple</span>
-          </button>
-        </div>
 
-        <hr class="final-divider" />
+          <hr class="divider" />
+          <div class="login-access">
+            <label for="username">Email ou nome do utilizador</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="remember">
+            <label class="switch">
+              <input type="checkbox" name="remember" />
+              <span class="slider round"></span>
+            </label>
+            <label class="remember-label">Lembrar-me</label>
+          </div>
 
-        <div class="final-message">
-          <label class="signup-account">Já possui uma conta?</label>
-          <a class="login-account">Faça login</a>
-        </div>
+          <button type="submit">Entrar</button>
+        </form>
+        <a class="forgot-password">Esqueceu a sua senha?</a>
+
+        <hr class="divider" />
+        <p class="signup-link">
+          Não tem uma conta? <a href="#">Inscreva-se no Spotify</a>
+        </p>
       </div>
-      <div class="privacity-policy">
-        <label class="recaptcha">
-        This site is protected by reCAPTCHA and the Google
-        </label>
-        <label class="privacity">
-            Privacy Policy and Terms of Service apply.
-        </label>
-    </div>
     </div>
   </body>
+  <footer>
+    <div class="privacity-policy">
+      <label class="recaptcha">
+        This site is protected by reCAPTCHA and the Google. Privacy Policy and
+        Terms of Service apply.
+      </label>
+    </div>
+  </footer>
 </html>
